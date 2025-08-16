@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #115389;
+    color: white;
+    text-align: center;
+    padding: 40px 10px 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  header p {
+    margin: 5px 0 0;
+    font-size: 20px;
+    font-weight: 300;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  main {
+    flex: 1;
+    position: relative;
+    min-height: 100vh;
+    background: url('https://storage.googleapis.com/ureify-strapi-assets/hiring_assessment_practices_f61ffddf4d/hiring_assessment_practices_f61ffddf4d.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.6);
+    z-index: 1;
+  }
+  
+  .login-section {
+    position: relative;
+    z-index: 2; 
+    display: flex;
+    gap: 50px;
+    justify-content:left;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+  }
+  
+  
+  .login-section {
+    display: flex;
+    justify-content: center;
+    gap: 700px;
+    margin-top: -190px;
+    flex-wrap: wrap;
+  }
+  
+  .login-box {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .login-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .login-box img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .login-button {
+    display: inline-block;
+    background-color: #004080;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #0066cc;
+  }
+  
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    width: 95%;
+    max-width: 550px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: #003366;
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0 25px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #004080;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 64, 128, 0.3);
+}
+
+button,
+input[type="submit"] {
+    background: linear-gradient(to right, #004080, #0066cc);
+    color: white;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: linear-gradient(to right, #0066cc, #004080);
+}
+
+a {
+    color: #003366;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    font-size: 16px;
+    margin-top: 20px;
+}
